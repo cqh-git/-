@@ -13,7 +13,7 @@
 			var string = '<img src="http://baidu.com" width="60px" height="80px">'
 			var reg2 = /src=".*"/g
 			console.log(string.match(reg2)) //["src="http://baidu.com" width="60px" height="80px""]
-			// 非贪婪模式
+			// 懒惰模式
 			var reg = /a.*?b/g;
 			var text = 'aaaabbabcdedfa';
 			console.log(text.match(reg)); //[aaaab,ab]

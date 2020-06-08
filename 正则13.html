@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var str = "hello   world fu jing wen ";
+			var reg = /\b/g;
+			var res = str.replace(reg, "&");
+			console.log(res);   // &hello&   &world& &fu& &jing& &wen&
+		</script>
+	</body>
+</html>
