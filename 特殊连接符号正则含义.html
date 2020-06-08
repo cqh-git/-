@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// .表示除\n之外的任意字符
+			// *表示匹配0-无穷
+			// +表示匹配1-无穷
+			// 贪婪模式
+			var string = '<img src="http://baidu.com" width="60px" height="80px">'
+			var reg2 = /src=".*"/g
+			console.log(string.match(reg2)) //["src="http://baidu.com" width="60px" height="80px""]
+			// 非贪婪模式
+			var reg = /a.*?b/g;
+			var text = 'aaaabbabcdedfa';
+			console.log(text.match(reg)); //[aaaab,ab]
+			var content = 'hello,jack,today is sunday,you are so joke,the weather is so good,we are go out play game ars';
+			var reg1 = /a(?:re|rs)/g; //等同于（are|ars）
+			console.log(content.match(reg1)) //[are,are,ars]
+		</script>
+	</body>
+</html>

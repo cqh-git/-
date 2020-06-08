@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// var str="Hello world Hello";
+			// //查找"Hello"
+			// var patt=/Hello/g;
+			// var result=patt.exec(str);
+			// document.write("返回值: " +  result); 
+			// //查找 "RUNOOB"
+			// patt=/RUNOOB/g;
+			// result=patt.exec(str);
+			// document.write("<br>返回值: " +  result);
+			// ---------------------------------------------------
+			var str = "Iloveantzone ,this is animate";
+			var reg = /an/;
+			console.log(reg.exec(str));
+			var str11 = "thename123and45hr6";
+			var reg = /\d/g;
+			reg.lastIndex = 15;
+			console.log(reg.exec(str11));
+			// --------------------------------------------
+
+			//设置匹配的字符串 
+			// var objStr = "我的手机号13522222222，他的手机号13288888888，她的手机号码13699999999";
+			// //设置正则表达式，匹配以13开头11位字符串，全局匹配 
+			// var reg2 = /13(/d)(/d{8})/g;
+			// 	//执行exec函数，尽管是全局匹配的正则表达式，但是exec方法只对指定的字符串进行一次匹配，获取字符串中第一个与正则表达式想匹配的内容，并且将匹配内容和子匹配的结果存储到返回的数组中 
+			// 	var arr = reg2.exec(objStr);
+			// 	//循环输出结果 
+			// 	for (var i = 0; i < arr.length; i++) {
+			// 		document.write("<li>" + arr[i] + "<br>");
+			// 	}
+		</script>
+	</body>
+</html>
