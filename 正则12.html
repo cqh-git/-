@@ -7,7 +7,15 @@
 	<body>
 		<script>
            var reg=/a|b/g,content='a,b,cb,a,b,a,c'
-		   console.log(content.match(reg))
+		   console.log(content.match(reg));
+		   var reg2=/1[3579]\d{9}/
+		   console.log(reg2.test('11671121854'));
+		   var reg3=/^1\d+1$/
+		   console.log(reg3.test(13221));
+		   var reg4=/^123/
+		   console.log(reg4.test('12311'))//true
+		   var reg5=/123/
+		   console.log(reg5.test('1123'))//true
 		</script>
 	</body>
 </html>
