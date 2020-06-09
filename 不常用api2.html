@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset=" utf-8">
+		<meta name="author" content="http://www.softwhy.com/" />
+		<title>蚂蚁部落</title>
+		<link rel="stylesheet" type="text/css" href="./css/1.css" />
+		<style type="text/css" id="1">
+			div {
+				text-align: center;
+				background-color: red;
+			}
+
+			#ant {
+				width: 120px;
+				height: 40px;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				let styleSheet = document.styleSheets[1];
+				styleSheet.insertRule("#ant{color:blue;text-align:right}", 1);
+				console.log(document.styleSheets)
+				console.log(document.styleSheets[0].ownerNode, document.styleSheets[1].ownerNode)
+				console.log(window.getComputedStyle(document.getElementById('ant')).textAlign)
+			}
+		</script>
+	</head>
+	<body>
+		<div id="ant" style="font-family: "arial black";">蚂蚁部落</div>
+	</body>
+</html>
