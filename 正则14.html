@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var text = 'here is a word er';
+			var reg = /\ber\b/g
+			console.log(text.match(reg))
+			var string='she is run,she hate me';
+			var html='abcdefsafa';
+			var reg1=/\bs\w+e\b/g;
+			var reg2=/s\w+/ig;
+			var reg3=/^1[357](\d){9}$/g;
+			console.log(string.match(reg1))
+			console.log(html.match(reg2))
+			console.log(reg3.test('132456718901'))
+		</script>
+	</body>
+</html>
